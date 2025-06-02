@@ -26,5 +26,9 @@ jobs:
 
       - name: SonarCloud scan
         uses: SonarSource/sonarcloud-github-action@v2
+        with:
+          args: >
+            -Dsonar.projectKey=cholo77_chatup-backend
+            -Dsonar.organization=cholo77
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
