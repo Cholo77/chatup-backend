@@ -37,4 +37,6 @@ server.use('/api/v1/user', userRoutes)
 server.set('port', process.env.PORT)
 server.listen(server.get('port'), () => {
     console.log(`🚀Server running at ${server.get('port')}`)
+    // test pipeline GitHub Actions
+
 }) 
